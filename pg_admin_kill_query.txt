@@ -1,0 +1,16 @@
+
+SELECT
+  S.pid,
+  age(clock_timestamp(), query_start),
+  usename,
+  query,
+  L.mode,
+  L.locktype,
+  L.granted
+FROM pg_stat_activity S
+inner join pg_locks L on S.pid = L.pid 
+order by L.granted, L.pid DESC
+
+
+
+SELECT pg_cancel_backend(564);
