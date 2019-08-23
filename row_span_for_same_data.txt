@@ -20,3 +20,5 @@ function fixit1(selector) {
 	
 	
 	//demo
+
+//demo from web browser
