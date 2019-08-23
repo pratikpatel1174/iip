@@ -17,3 +17,6 @@ function fixit1(selector) {
 	fixit($("table"))
 	//table is table tag
 	//nth child for select column num
+	
+	
+	//demo
